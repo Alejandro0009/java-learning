@@ -23,7 +23,7 @@
  * ============================================================
  */
 
-package matriz;
+package p05_arrays;
 
 import java.util.Scanner;
 
