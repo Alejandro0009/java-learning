@@ -1,3 +1,4 @@
+
 package app;
 
 import modelo.alumno;
@@ -17,28 +18,42 @@ public class main {
         System.out.print("Nombre del alumno: ");
         String nombre = teclado.nextLine();
 
-        System.out.print("Edad: ");
-        int edad = teclado.nextInt();
-        teclado.nextLine();
+        System.out.print("Apellido paterno: ");
+        String apellidoPaterno = teclado.nextLine();
 
-        System.out.print("Grado: ");
-        String grado = teclado.nextLine();
+        System.out.print("Apellido materno: ");
+        String apellidoMaterno = teclado.nextLine();
 
-        System.out.print("Telefono: ");
+        System.out.print("Fecha de nacimiento (YYYY-MM-DD): ");
+        String fechaNacimiento = teclado.nextLine();
+
+        System.out.print("Grado académico: ");
+        String gradoAcademico = teclado.nextLine();
+
+        System.out.print("Alergias: ");
+        String alergias = teclado.nextLine();
+
+        System.out.print("Fecha de inscripción (YYYY-MM-DD): ");
+        String fechaInscripcion = teclado.nextLine();
+
+        System.out.print("Estatus: ");
+        String estatus = teclado.nextLine();
+
+        System.out.print("Teléfono: ");
         String telefono = teclado.nextLine();
-
-        System.out.print("Correo: ");
-        String correo = teclado.nextLine();
 
 
         alumno alumno = new alumno();
 
         alumno.setNombre(nombre);
-        alumno.setEdad(edad);
-        alumno.setGrado(grado);
-        alumno.setTelefono(telefono);
-        alumno.setCorreo(correo);
-        alumno.setFecha_registro("2026-07-31");
+        alumno.setApellidoPaterno(apellidoPaterno);
+        alumno.setApellidoMaterno(apellidoMaterno);
+        alumno.setFechaDeNacimiento(fechaNacimiento);
+        alumno.setGradoAcademico(gradoAcademico);
+        alumno.setAlergias(alergias);
+        alumno.setFechaDeInscripcion(fechaInscripcion);
+        alumno.setEstatus(estatus);
+        alumno.setTelefonoEstudiante(telefono);
 
 
         dao.guardarAlumno(alumno);

@@ -1,38 +1,50 @@
 
 package modelo;
 
-
 public class alumno {
-    
-    private int id_alumno;
-    private String nombre;
-    private int edad;
-    private String grado;
-    private String telefono;
-    private String correo;
-    private String fecha_registro;
 
-    public alumno(int id_alumno, String nombre, int edad, String grado, String telefono, String correo, String fecha_registro) {
-        this.id_alumno = id_alumno;
+    private int id;
+    private String nombre;
+    private String apellidoPaterno;
+    private String apellidoMaterno;
+    private String fechaDeNacimiento;
+    private String gradoAcademico;
+    private String alergias;
+    private String fechaDeInscripcion;
+    private String estatus;
+    private String telefonoEstudiante;
+
+    // Constructor completo
+    public alumno(int id, String nombre, String apellidoPaterno, String apellidoMaterno,
+                  String fechaDeNacimiento, String gradoAcademico, String alergias,
+                  String fechaDeInscripcion, String estatus, String telefonoEstudiante) {
+
+        this.id = id;
         this.nombre = nombre;
-        this.edad = edad;
-        this.grado = grado;
-        this.telefono = telefono;
-        this.correo = correo;
-        this.fecha_registro = fecha_registro;
+        this.apellidoPaterno = apellidoPaterno;
+        this.apellidoMaterno = apellidoMaterno;
+        this.fechaDeNacimiento = fechaDeNacimiento;
+        this.gradoAcademico = gradoAcademico;
+        this.alergias = alergias;
+        this.fechaDeInscripcion = fechaDeInscripcion;
+        this.estatus = estatus;
+        this.telefonoEstudiante = telefonoEstudiante;
     }
 
+    // Constructor vacío
     public alumno() {
     }
 
-    public int getId_alumno() {
-        return id_alumno;
+    // Getter y Setter de id
+    public int getId() {
+        return id;
     }
 
-    public void setId_alumno(int id_alumno) {
-        this.id_alumno = id_alumno;
+    public void setId(int id) {
+        this.id = id;
     }
 
+    // Getter y Setter de nombre
     public String getNombre() {
         return nombre;
     }
@@ -41,48 +53,75 @@ public class alumno {
         this.nombre = nombre;
     }
 
-    public int getEdad() {
-        return edad;
+    // Getter y Setter de apellido paterno
+    public String getApellidoPaterno() {
+        return apellidoPaterno;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public void setApellidoPaterno(String apellidoPaterno) {
+        this.apellidoPaterno = apellidoPaterno;
     }
 
-    public String getGrado() {
-        return grado;
+    // Getter y Setter de apellido materno
+    public String getApellidoMaterno() {
+        return apellidoMaterno;
     }
 
-    public void setGrado(String grado) {
-        this.grado = grado;
+    public void setApellidoMaterno(String apellidoMaterno) {
+        this.apellidoMaterno = apellidoMaterno;
     }
 
-    public String getTelefono() {
-        return telefono;
+    // Getter y Setter de fecha de nacimiento
+    public String getFechaDeNacimiento() {
+        return fechaDeNacimiento;
     }
 
-    public void setTelefono(String telefono) {
-        this.telefono = telefono;
+    public void setFechaDeNacimiento(String fechaDeNacimiento) {
+        this.fechaDeNacimiento = fechaDeNacimiento;
     }
 
-    public String getCorreo() {
-        return correo;
+    // Getter y Setter de grado académico
+    public String getGradoAcademico() {
+        return gradoAcademico;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setGradoAcademico(String gradoAcademico) {
+        this.gradoAcademico = gradoAcademico;
     }
 
-    public String getFecha_registro() {
-        return fecha_registro;
+    // Getter y Setter de alergias
+    public String getAlergias() {
+        return alergias;
     }
 
-    public void setFecha_registro(String fecha_registro) {
-        this.fecha_registro = fecha_registro;
+    public void setAlergias(String alergias) {
+        this.alergias = alergias;
     }
-    
-    
-    
-    
-    
+
+    // Getter y Setter de fecha de inscripción
+    public String getFechaDeInscripcion() {
+        return fechaDeInscripcion;
+    }
+
+    public void setFechaDeInscripcion(String fechaDeInscripcion) {
+        this.fechaDeInscripcion = fechaDeInscripcion;
+    }
+
+    // Getter y Setter de estatus
+    public String getEstatus() {
+        return estatus;
+    }
+
+    public void setEstatus(String estatus) {
+        this.estatus = estatus;
+    }
+
+    // Getter y Setter de teléfono
+    public String getTelefonoEstudiante() {
+        return telefonoEstudiante;
+    }
+
+    public void setTelefonoEstudiante(String telefonoEstudiante) {
+        this.telefonoEstudiante = telefonoEstudiante;
+    }
 }
