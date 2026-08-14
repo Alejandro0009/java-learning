@@ -21,6 +21,7 @@ package basicos;
  */
 
 public class problema_A {
+    
     public static void main(String[] args) {
         // Imprime un saludo inicial en pantalla
         System.out.println("Hola, soy Alejandro. Soy programador.");
